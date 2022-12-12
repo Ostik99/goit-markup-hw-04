@@ -58,7 +58,7 @@ a {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -350,7 +350,6 @@ a {
 
 .add {
   width: 264px;
-  margin-top: 8px;
 }
 
 .memberships {
@@ -367,11 +366,14 @@ a {
 /* hw-04 */
 
 .features-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   background-color: var(--second-brand-color); 
-  padding: 24px 100px;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .media {
@@ -383,11 +385,18 @@ a {
 }
 
 .icons-media {
+  width: 40px;
+  height: 40px;
+}
+
+.media-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+
+  width: 100%;
+  height: 100%;
+
   border-radius: 50%;
   background-color: var(--primary-brand-color);
 }
@@ -399,32 +408,43 @@ a {
 
 }
 
-.customer {
+.customer { 
+  width: calc((100% - 5 *24px) / 6);
+  height: 88px;
+}
+
+.company-link {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
+
+  color: #AFB1B8;
 }
 
-.customer:hover {
-  border: 1px solid var(--primary-brand-color);
-}
 .customer-logo {
   fill: #8E8F99;
 }
 
-.customer-logo:hover {
+.company-link:hover,
+.company-link:focus {
+  border: 1px solid var(--primary-brand-color);
+  border-radius: 4px;
+}
+
+.customer-logo:hover,
+.customer-logo:focus {
   fill: var(--primary-brand-color);
 }
 
 .footer-title {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -451,11 +471,13 @@ a {
   gap: 120px;
 }
 
-.footer-icons:hover {
+.footer-icons:hover,
+.footer-icons:focus {
   background-color: #31D0AA;
 }
 
-.article:hover {
+.article:hover,
+.article:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
