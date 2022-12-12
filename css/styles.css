@@ -74,7 +74,6 @@ a {
 }
 
 .section.hero {
-  background-color: var(--primary-color);
   padding-top: 192px;
   padding-bottom: 192px;
   background-image: linear-gradient(to right,
@@ -87,6 +86,8 @@ a {
   margin-right: auto;
   background-size: contain;
   background-position: center;
+  background-color: var(--primary-color);
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -428,18 +429,14 @@ a {
 }
 
 .customer-logo {
-  fill: #8E8F99;
+  fill: currentColor;
 }
 
 .company-link:hover,
 .company-link:focus {
   border: 1px solid var(--primary-brand-color);
   border-radius: 4px;
-}
-
-.customer-logo:hover,
-.customer-logo:focus {
-  fill: var(--primary-brand-color);
+  color: var(--primary-brand-color);
 }
 
 .footer-title {
@@ -484,4 +481,9 @@ a {
 .hero-button:hover,
 .hero-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.media-link:hover,
+.media-link:focus {
+  background-color: #31D0AA;
 }
